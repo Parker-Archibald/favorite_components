@@ -16,7 +16,7 @@ const PricingCard = () => {
     }
 
     return (
-        <div className="flex flex-col justify-center bg-gray-100 pb-6">
+        <div className="flex flex-col justify-center bg-gray-100 h-[100%] md:h-[100vh]">
             <div className="text-center">
                 <h1 className="font-bold text-4xl mt-10"><span className="text-blue-400">Flexible</span> Plans</h1>
                 <div className="w-[100%] flex justify-center"><div className="text-sm w-[50%]">Choose a plan that works best for you and your team.</div></div>
