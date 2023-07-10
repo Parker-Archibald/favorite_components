@@ -49,7 +49,8 @@ const PricingCard = () => {
                     ],
                     button: 'Basic',
                     priceType: priceType
-                }}/>
+                }} 
+                key='Basic'/>
                 <Card info={{
                     name:'Advanced',
                     cost: {
@@ -64,7 +65,8 @@ const PricingCard = () => {
                     ],
                     button: 'Advanced',
                     priceType: priceType
-                }}/>
+                }}
+                key='Advanced'/>
                 <Card info={{
                     name:'Enterprise',
                     cost: {
@@ -80,7 +82,8 @@ const PricingCard = () => {
                     ],
                     button: 'Enterprise',
                     priceType: priceType
-                }}/>
+                }}
+                key='Enterprise'/>
             </div>
         </div>
     )
