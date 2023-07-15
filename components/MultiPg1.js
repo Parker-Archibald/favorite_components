@@ -3,7 +3,7 @@
 const MultiPg1 = ({image, text}) => {
 
     const handleClick = () => {
-        console.log(text)
+        localStorage.setItem('service', text)
     }
 
     return (
