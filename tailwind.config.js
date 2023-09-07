@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,13 +13,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           calculatorBG: "url(../public/gradientbackground.jpg)",
+          earth: 'url(../public/earth.jpg)',
+          signupBg: 'url(../public/signupBg.jpg)'
       },
       transitionProperty: {
-        'height': 'height'
+        'height': 'height',
+        'width': 'width'
+      },
+      fontFamily: {
+        'orbitron': ['orbitron', 'sans-serif']
       }
     },
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar')
   ],
 }

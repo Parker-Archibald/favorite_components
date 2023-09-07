@@ -34,11 +34,18 @@ const MultiSearch = () => {
     }
 
     const handleSearchChange = (e) => {
-        setSearch(e.target.value)
-        let value = Techs.filter(tech => {
-            return tech.indexOf(e.target.value) === 0;
-        })
-        setInitialList(value)
+            let input = e.target.value;
+            if(e.target.value !== '') {
+                input = input[0].toUpperCase();
+            }
+            setSearch(input)
+
+            let value = Techs.filter(tech => {
+                return tech.indexOf(input) === 0;
+            })
+            setInitialList(value)
+        
+        
     }
 
     return (
