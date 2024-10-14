@@ -44,7 +44,7 @@ const Weather = () => {
             // .then(results => console.log(results))
             .then(results => {
                 setTemperature(results?.main);
-                setWeather(results?.weather[0]);
+                setWeather(results?.weather?.[0]);
                 setWind(results?.wind)
                 setLocation(results?.name)
                 setIcon(`https://openweathermap.org/img/wn/${results?.weather[0].icon}@2x.png`)

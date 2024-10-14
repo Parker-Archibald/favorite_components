@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const NextDayList = ({lat, lon}) => {
 
     const API_KEY = '71251eb7d645f26e9bdb97ee77601d5a';
+    console.log(API_KEY)
 
     const days = [
         'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
